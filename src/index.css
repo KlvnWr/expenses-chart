@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: DM sans;
-  font-size: 18px;
-}
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: hsl(27, 66%, 92%);
+  font-family: DM sans;
 }
