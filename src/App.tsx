@@ -4,9 +4,11 @@ function App() {
   return (
     <>
       <div id="balance" className="">
-        <div className="bg-SoftRed rounded-2xl">
-          <p className="text-white">My balance</p>
-          <h1 className="font-bold mt-2 text-2xl text-white">$921.48</h1>
+        <div className="bg-SoftRed rounded-2xl p-5 m-5 min-w-96">
+          <p className="text-Cream text-left">My balance</p>
+          <h1 className="font-bold mt-2 text-2xl text-Cream text-left">
+            $921.48
+          </h1>
           <div id="circulo"></div>
         </div>
       </div>
