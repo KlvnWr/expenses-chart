@@ -3,8 +3,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div id="balance" className="">
-        <div className=" flex bg-SoftRed rounded-2xl p-5 m-5 min-w-96">
+      <div id="balance">
+        <div className=" flex bg-SoftRed rounded-2xl p-5 mb-5 min-w-full">
           <div className="flex-1">
             <p className="text-Cream text-left">My balance</p>
             <h1 className="font-bold mt-2 text-2xl text-Cream text-left">
@@ -26,26 +26,39 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="spending">
-        <div>
-          <h1 className="font-bold text-DarkBrown">Spending - Last 7 days</h1>
-          <p className="text-MediumBrown">mon tue wed thu fri sat sun</p>
-          <div className="text-MediumBrown">
-            Total this month <span className="text-DarkBrown">$478.33</span>
-          </div>
-          <div className="text-MediumBrown">
-            <span className="text-DarkBrown">+2.4%</span> from last month
-          </div>
+      <div
+        id="spending"
+        className="bg-VeryPaleOrange rounded-2xl p-5 min-w-full"
+      >
+        <h1 className="font-bold text-DarkBrown text-2xl text-left mb-7">
+          Spending - Last 7 days
+        </h1>
+        <div className="grid grid-cols-7 gap-5 mb-1">
+          <div className="w-7 h-6 bg-SoftRed rounded"></div>
+          <div className="w-7 h-12 bg-SoftRed rounded"></div>
+          <div className="w-7 h-24 bg-SoftRed rounded"></div>
+          <div className="w-7 h-10 bg-SoftRed rounded"></div>
+          <div className="w-7 h-8 bg-SoftRed rounded"></div>
+          <div className="w-7 h-16 bg-SoftRed rounded"></div>
+          <div className="w-7 h-7 bg-SoftRed rounded"></div>
         </div>
-
-        <div className="attribution">
-          Challenge by{" "}
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-            Frontend Mentor
-          </a>
-          . Coded by <a href="https://github.com/KlvnWr">Kelvin</a>.
+        <div>
+          <p className="text-MediumBrown">mon tue wed thu fri sat sun</p>
+        </div>
+        <div className="text-MediumBrown">
+          Total this month <span className="text-DarkBrown">$478.33</span>
+        </div>
+        <div className="text-MediumBrown">
+          <span className="text-DarkBrown">+2.4%</span> from last month
         </div>
       </div>
+      <footer className="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="https://github.com/KlvnWr">Kelvin</a>.
+      </footer>
     </>
   );
 }
