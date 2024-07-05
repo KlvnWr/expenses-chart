@@ -30,17 +30,17 @@ function App() {
         id="spending"
         className="bg-VeryPaleOrange rounded-2xl p-5 min-w-full"
       >
-        <h1 className="font-bold text-DarkBrown text-2xl text-left mb-7">
+        <h1 className="font-bold text-DarkBrown text-2xl text-left mb-14">
           Spending - Last 7 days
         </h1>
         <div className="grid grid-cols-7 gap-5 mb-1">
-          <div className="w-8 h-6 bg-SoftRed rounded"></div>
-          <div className="w-8 h-12 bg-SoftRed rounded"></div>
-          <div className="w-8 h-24 bg-SoftRed rounded"></div>
-          <div className="w-8 h-10 bg-SoftRed rounded"></div>
-          <div className="w-8 h-8 bg-SoftRed rounded"></div>
-          <div className="w-8 h-16 bg-SoftRed rounded"></div>
-          <div className="w-8 h-7 bg-SoftRed rounded"></div>
+          <div className="w-9 h-8 bg-SoftRed rounded self-end"></div>
+          <div className="w-9 h-14 bg-SoftRed rounded self-end"></div>
+          <div className="w-9 h-24 bg-Cyan rounded self-end"></div>
+          <div className="w-9 h-12 bg-SoftRed rounded self-end"></div>
+          <div className="w-9 h-10 bg-SoftRed rounded self-end"></div>
+          <div className="w-9 h-16 bg-SoftRed rounded self-end"></div>
+          <div className="w-9 h-8 bg-SoftRed rounded self-end"></div>
         </div>
         <div className="grid grid-cols-7 gap-5 mb-1">
           <p className="text-MediumBrown">mon</p>
@@ -51,19 +51,19 @@ function App() {
           <p className="text-MediumBrown">sat</p>
           <p className="text-MediumBrown">sun</p>
         </div>
-        <div className="h-px bg-gray-200 w-full border-b border-grey-400 shadow-sm my-6"></div>
+        <div className="w-full border-b-2 border-Cream my-6"></div>
         <div className="flex gap-28">
-          <div className="text-left">
+          <div className="text-left self-end">
             <p className="text-MediumBrown">Total this month</p>
-            <span className="text-DarkBrown text-4xl text-">$478.33</span>
+            <span className="text-DarkBrown text-4xl font-bold">$478.33</span>
           </div>
-          <div className="text-right">
-            <span className="text-DarkBrown">+2.4%</span>
+          <div className="text-right self-end">
+            <span className="text-DarkBrown font-bold">+2.4%</span>
             <p className="text-MediumBrown">from last month</p>
           </div>
         </div>
       </div>
-      <footer className="attribution">
+      <footer className="attribution self-end">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
